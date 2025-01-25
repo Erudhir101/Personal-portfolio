@@ -45,7 +45,7 @@
 			</div>
 		</div>
 		<a
-			href="{type}/{slug}"
+			href={type === '' ? slug : type + '/' + slug}
 			class="rounded-full border border-cat-green px-2 py-1 text-center transition-colors duration-300 hover:bg-cat-green hover:text-cat-crust md:px-4 md:py-2"
 			>Ver {type === 'blog' ? 'Artigo' : 'Projeto'}</a
 		>

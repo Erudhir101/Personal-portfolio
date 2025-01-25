@@ -1,5 +1,5 @@
 import { mdsvex, escapeSvelte } from 'mdsvex';
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-vercel';
 import { createHighlighter } from 'shiki';
 
 const langst = [

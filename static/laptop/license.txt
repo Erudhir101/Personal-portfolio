@@ -1,0 +1,11 @@
+Model Information:
+* title:	Laptop V2
+* source:	https://sketchfab.com/3d-models/laptop-v2-10b153c036d54f6ea03e08e6f81e33f6
+* author:	FishyBusiness (https://sketchfab.com/FishyBusiness)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Laptop V2" (https://sketchfab.com/3d-models/laptop-v2-10b153c036d54f6ea03e08e6f81e33f6) by FishyBusiness (https://sketchfab.com/FishyBusiness) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

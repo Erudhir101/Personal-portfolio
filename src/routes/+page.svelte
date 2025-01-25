@@ -87,7 +87,7 @@
 </script>
 
 <svelte:head>
-	<title> Gabriel Carneiro </title>
+	<title>Gabriel Carneiro</title>
 </svelte:head>
 
 <div class="flex flex-wrap items-center">

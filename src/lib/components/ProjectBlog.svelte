@@ -46,6 +46,7 @@
 		</div>
 		<a
 			href={type === '' ? slug : type + '/' + slug}
+			target={type === '' ? '_blank' : '_self'}
 			class="rounded-full border border-cat-green px-2 py-1 text-center transition-colors duration-300 hover:bg-cat-green hover:text-cat-crust md:px-4 md:py-2"
 			>Ver {type === 'blog' ? 'Artigo' : 'Projeto'}</a
 		>

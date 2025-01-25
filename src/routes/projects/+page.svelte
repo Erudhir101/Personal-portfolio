@@ -15,5 +15,5 @@
 			summary: 'meu portfólio pessoal'
 		}
 	]}
-	type=""
+	type="Projeto"
 />

@@ -10,7 +10,6 @@
 	let x = $state(-5);
 	let y = $state(0);
 	let z = $state(5);
-	$inspect(x, y, z);
 
 	if (browser) {
 		let camera: THREE.PerspectiveCamera;

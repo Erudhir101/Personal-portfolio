@@ -20,15 +20,17 @@
 <div class="flex flex-col items-start gap-8">
 	<h2 class="text-5xl font-bold text-cat-text md:text-7xl">{title}</h2>
 	<p class="prose prose-lg font-light md:prose-xl dark:prose-invert">{desc}</p>
-	<input
-		class="self-end rounded-lg border border-transparent bg-cat-crust p-4 text-cat-text transition duration-200 ease-in placeholder:opacity-80 hover:border-cat-text focus:border-cat-blue focus:outline-none"
-		type="search"
-		id="search-field"
-		placeholder="Pesquise o {type}"
-		autocomplete="on"
-		bind:value={search}
-		oninput={filter}
-	/>
+	{#if type === 'Artigo'}
+		<input
+			class="self-end rounded-lg border border-transparent bg-cat-crust p-4 text-cat-text transition duration-200 ease-in placeholder:opacity-80 hover:border-cat-text focus:border-cat-blue focus:outline-none"
+			type="search"
+			id="search-field"
+			placeholder="Pesquise o {type}"
+			autocomplete="on"
+			bind:value={search}
+			oninput={filter}
+		/>
+	{/if}
 </div>
 
 {#each filtered as { title, publishedAt, categories, slug } (title)}
@@ -45,10 +47,10 @@
 			</div>
 		</div>
 		<a
-			href={type === '' ? slug : type + '/' + slug}
-			target={type === '' ? '_blank' : '_self'}
+			href={type === 'Projeto' ? slug : type + '/' + slug}
+			target={type === 'Projeto' ? '_blank' : '_self'}
 			class="rounded-full border border-cat-green px-2 py-1 text-center transition-colors duration-300 hover:bg-cat-green hover:text-cat-crust md:px-4 md:py-2"
-			>Ver {type === 'blog' ? 'Artigo' : 'Projeto'}</a
+			>Ver {type}</a
 		>
 	</div>
 {/each}

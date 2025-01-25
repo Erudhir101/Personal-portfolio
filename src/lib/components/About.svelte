@@ -1,8 +1,12 @@
+<script>
+	import perfil from '$lib/perfil-2.jpeg';
+</script>
+
 <main class="flex w-full flex-col items-center gap-8 px-4 lg:flex-row-reverse">
 	<div class="aspect-square max-w-sm overflow-hidden rounded-3xl border-2 border-cat-red md:w-2/3">
 		<img
 			class="block h-full object-fill"
-			src="https://images.prismic.io/3d-tutorial-sveltekit/ZmhbwZm069VX1o_n_Andy-Profile.webp?auto=format%2Ccompress&q=90"
+			src={perfil}
 			alt="foto do dono do portifolio"
 			width="800"
 			height="800"

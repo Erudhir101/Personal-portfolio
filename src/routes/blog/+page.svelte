@@ -7,5 +7,5 @@
 	title="Blogs"
 	desc="Artigos sobre TI, estudos pessoais e afins."
 	posts={data.posts}
-	type="blog"
+	type="Artigo"
 />

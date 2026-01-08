@@ -7,7 +7,18 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 
-	kit: { adapter: adapter() }
+	kit: {
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: undefined,
+			precompress: false,
+			strict: true
+		}),
+		paths: {
+			base: process.env.NODE_ENV === 'production' ? '/personal-portfolio' : ''
+		}
+	}
 };
 
 export default config;

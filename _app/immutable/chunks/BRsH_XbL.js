@@ -1,0 +1,5 @@
+const e=[{title:"first post",summary:"this is a test teste teste teste teste teste teste teste teste teste teste teste teste teste teste",created_date:new Date("2024-01-01T00:00:00.000Z"),author:"jubileu",content:'# second post\n\n```lua\nprint("second")\n```',_meta:{filePath:"first.md",fileName:"first.md",directory:".",extension:"md",path:"first"},id:"first",html:`<h1>second post</h1>
+<pre><code class="language-lua">print("second")
+</code></pre>`},{title:"second post",summary:"this is a second text sometimes this happened other things don't occur with some frequence this is a second text sometimes this happened other things don't occur with some frequence",created_date:new Date("2026-01-01T00:00:00.000Z"),author:"pe depano",content:'# first post\n\n```lua\nprint("something")\n```',_meta:{filePath:"second.md",fileName:"second.md",directory:".",extension:"md",path:"second"},id:"second",html:`<h1>first post</h1>
+<pre><code class="language-lua">print("something")
+</code></pre>`}];export{e as a};

@@ -1,5 +1,8 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
+	import { ModeWatcher } from 'mode-watcher';
+	import '../global.css';
+	import Navbar from '$lib/components/navbar.svelte';
 
 	let { children } = $props();
 </script>
@@ -8,4 +11,6 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<ModeWatcher />
+<Navbar />
 {@render children()}

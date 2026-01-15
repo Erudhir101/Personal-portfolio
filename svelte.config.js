@@ -8,6 +8,9 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
+		alias: {
+			'content-collections': './.content-collections/generated'
+		},
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',

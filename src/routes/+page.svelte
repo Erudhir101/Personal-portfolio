@@ -3,7 +3,6 @@
 
 <section class="section">
 	<h2 class="name">Bem Vindo! Me chamo <span class="current-name">Gabriel.</span></h2>
-	<!-- <h2 class="title">Artigos e Tutoriais</h2> -->
 	<p class="text">Eu sou Engenheiro de Software Full Stack Junior.</p>
 	<p class="text">
 		Utilizo e tenho o conhecimento das mais diversas ferramentas e processo de desenvolvimento, seja
@@ -33,14 +32,6 @@
 		margin-bottom: 1rem;
 		text-align: justify;
 		max-width: 80%;
-	}
-
-	.title {
-		font-size: 1rem;
-		color: var(--color-secondary);
-		font-weight: 800;
-		text-transform: uppercase;
-		letter-spacing: 0.125rem;
 	}
 
 	@media (max-width: 1280px) {

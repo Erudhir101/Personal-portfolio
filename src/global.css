@@ -19,6 +19,9 @@ body {
 	font-family: Inter, Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
+
+	background-color: var(--bg-base);
+	color: var(--text-body);
 }
 
 img,
@@ -78,9 +81,4 @@ h6 {
 	--color-success: light-dark(#40a02b, #a6e3a1);
 	--color-error: light-dark(#af3029, #d14d41);
 	--color-warning: light-dark(#bc5215, #da702c);
-}
-
-body {
-	background-color: var(--bg-base);
-	color: var(--text-body);
 }

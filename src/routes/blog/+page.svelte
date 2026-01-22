@@ -26,10 +26,8 @@
 	</div>
 
 	<section class="posts">
-		{#each { length: 10 }}
-			{#each data.posts as post (post.id)}
-				{@render blog(post)}
-			{/each}
+		{#each data.posts as post (post.id)}
+			{@render blog(post)}
 		{/each}
 	</section>
 </main>
@@ -68,7 +66,7 @@
 		min-width: 0;
 		gap: 1rem;
 		padding: 20px 33px 25px;
-		border: 1px solid var(--color-primary);
+		border: 2px solid var(--bg-border);
 		border-radius: 8px;
 		a {
 			color: var(--text-body);

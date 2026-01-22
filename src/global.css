@@ -67,18 +67,20 @@ h6 {
 
 :root {
 	color-scheme: light dark;
-	--bg-base: light-dark(#eff1f5, #1e1e2e);
-	--bg-surface: light-dark(#ccd0da, #313244);
-	--bg-overlay: light-dark(#9ca0b0, #6c7086);
-	--text-body: light-dark(#010101, #fafafa);
-	--text-muted: light-dark(#6c6f85, #a6adc8);
-	--color-primary: light-dark(#1e66f5, #89b4fa);
-	--color-secondary: light-dark(#8839ef, #cba6f7);
+	--bg-base: light-dark(#fffcf0, #100f0f);
+	--bg-surface: light-dark(#f2f0e5, #1c1b1a);
+	--bg-border: light-dark(#e6e4d9, #282726);
+	--bg-overlay: light-dark(#cecdc3, #403e3c);
+	--text-body: light-dark(#100f0f, #f2f0e5);
+	--text-muted: light-dark(#6f6e69, #878580);
+	--color-primary: light-dark(#205ea6, #4385be);
+	--color-secondary: light-dark(#5e409d, #8b7ec8);
 	--color-success: light-dark(#40a02b, #a6e3a1);
-	--color-error: light-dark(#d20f39, #f38ba8);
-	--color-warning: light-dark(#fe640b, #fab387);
+	--color-error: light-dark(#af3029, #d14d41);
+	--color-warning: light-dark(#bc5215, #da702c);
 }
 
 body {
 	background-color: var(--bg-base);
+	color: var(--text-body);
 }

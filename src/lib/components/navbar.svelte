@@ -66,12 +66,15 @@
 		margin-inline: auto;
 		padding: 1rem 2rem;
 		border-radius: 0 0 10px 10px;
-		border: 1px solid var(--bg-overlay);
+		border: 2px solid var(--bg-border);
 		border-top: 0;
 		width: 100%;
 		max-width: 50%;
 		background: color-mix(in srgb, var(--bg-surface), transparent 70%);
-		box-shadow: 0 2px 30px color-mix(in srgb, var(--color-primary), transparent 90%);
+		box-shadow:
+			0px 1px 1.1px var(--bg-border),
+			0px 1.7px 1.9px -1.2px var(--bg-border),
+			0px 4px 4.5px -2.5px var(--bg-border);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
 	}

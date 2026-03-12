@@ -133,7 +133,7 @@
 	}
 
 	.linkedin {
-		color: var(--color);
+		color: var(--color-base);
 		transition: color 0.2s ease-in;
 		&:hover {
 			color: var(--color-primary);

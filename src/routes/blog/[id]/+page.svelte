@@ -4,7 +4,8 @@
 	let { data }: PageProps = $props();
 	const { post } = $derived(data);
 
-	async function handleCopy(event: MouseEvent) {
+	async function handleCopy(event: MouseEvent | KeyboardEvent) {
+		if (event instanceof KeyboardEvent && event.key !== 'Enter' && event.key !== ' ') return;
 		const target = event.target as HTMLElement;
 
 		const button = target.closest('.copy-btn') as HTMLButtonElement;
@@ -42,9 +43,9 @@
 			}).format(post.created_date)}.</span
 		>
 	</div>
-	<main class="content" onclick={handleCopy}>
+	<div class="content" onclick={handleCopy} onkeydown={handleCopy} role="presentation">
 		{@html post.html}
-	</main>
+	</div>
 </article>
 
 <style>

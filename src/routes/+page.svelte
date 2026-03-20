@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <section class="section">
 	<h2 class="name">Bem Vindo! Me chamo <span class="current-name">Gabriel.</span></h2>
 	<p class="text">Eu sou Engenheiro de Software Full Stack Junior.</p>

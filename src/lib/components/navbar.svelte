@@ -125,7 +125,7 @@
 		gap: 1rem;
 	}
 	.github {
-		color: var(--white);
+		color: var(--text-body);
 		transition: color 0.2s ease-in;
 		&:hover {
 			color: var(--color-secondary);
@@ -133,7 +133,7 @@
 	}
 
 	.linkedin {
-		color: var(--color-base);
+		color: var(--color-primary);
 		transition: color 0.2s ease-in;
 		&:hover {
 			color: var(--color-primary);
@@ -157,7 +157,7 @@
 	}
 
 	.sidebar {
-		display: none;
+		display: block;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -166,11 +166,14 @@
 		background: var(--bg-surface, #fff);
 		box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
 		z-index: 50;
+		visibility: hidden;
 
 		transform: translateX(-100%);
-		transition: transform 0.3s ease-in-out;
+		transition:
+			transform 0.3s ease-in-out,
+			visibility 0.3s ease-in-out;
 		&.open {
-			display: block;
+			visibility: visible;
 			transform: translateX(0);
 		}
 		.links {
@@ -203,6 +206,9 @@
 		.sidebar {
 			display: flex;
 			width: 100%;
+		}
+		.sidebar.open {
+			display: flex;
 		}
 	}
 

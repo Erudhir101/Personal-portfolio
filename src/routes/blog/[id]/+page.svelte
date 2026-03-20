@@ -21,7 +21,7 @@
 				button.innerText = 'Copied!';
 				setTimeout(() => {
 					button.innerText = '';
-					button.appendChild(svg);
+					if (svg) button.appendChild(svg);
 					button.classList.remove('copied');
 				}, 2000);
 			} catch (err) {
@@ -43,7 +43,7 @@
 			}).format(post.created_date)}.</span
 		>
 	</div>
-	<div class="content" onclick={handleCopy} onkeydown={handleCopy} role="presentation">
+	<div class="content" onclick={handleCopy} onkeydown={handleCopy}>
 		{@html post.html}
 	</div>
 </article>
@@ -172,7 +172,7 @@
 			border-radius: 10px;
 			border: 1px solid var(--bg-border);
 			margin: 2rem 0;
-			overflow: hidden;
+			overflow: auto;
 			:global(code) {
 				font-size: 1rem;
 				border: 0;
